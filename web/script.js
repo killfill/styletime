@@ -3,14 +3,16 @@ $ = function(id) {
 }
 
 function load(file) {
-    $('content').src = file;
+    content.src = file;
 }
 
 var sel;
+var content;
 
 function init() {
 
     sel = $('selector');
+    content = $('content');
 
     sel.onchange = function() {
 
@@ -19,6 +21,19 @@ function init() {
 
         selectionChanged(opt.value);
     }
+
+    content.onload = function() {
+        var s = document.createElement("link");
+        s.href = content.src + '.css';
+        s.rel = "stylesheet";
+        content.contentWindow.document.body.appendChild(s);
+
+        var j = document.createElement("script");
+        j.src = "http://localhost:8001/vogue-client.js";
+        j.type = "text/javascript";
+        content.contentWindow.document.body.appendChild(j);
+
+    };
 }
 
 function selectionChanged(value) {

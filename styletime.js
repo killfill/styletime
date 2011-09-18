@@ -60,7 +60,6 @@ StyleTime.prototype.init = function(opts) {
     })
 }
 
-
 StyleTime.prototype.downloadContent = function(uri) {
 
     var me = this;
@@ -103,7 +102,6 @@ StyleTime.prototype.downloadContent = function(uri) {
 
     })
 }
-
 
 //TODO: Change this!...
 exec = require('child_process').exec;

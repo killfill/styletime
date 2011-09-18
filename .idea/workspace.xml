@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf06b249-d928-452b-a335-0a97529db857" name="Default" comment=":P">
+    <list default="true" id="cf06b249-d928-452b-a335-0a97529db857" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styletime.js" afterPath="$PROJECT_DIR$/styletime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script.js" afterPath="$PROJECT_DIR$/web/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/style.css" afterPath="$PROJECT_DIR$/web/style.css" />
     </list>
     <ignored path="styletime.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,16 +33,25 @@
       <file leaf-file-name="styletime.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styletime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="0" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.0">
+            <state line="104" column="0" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="24" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.6721311">
+            <state line="67" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -58,7 +69,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="-3.9230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/content/sofsis.cl/index.html.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.14051522">
               <folding />
             </state>
           </provider>
@@ -67,7 +87,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="23" selection-start="241" selection-end="241" vertical-scroll-proportion="-6.875">
+            <state line="18" column="13" selection-start="491" selection-end="491" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -76,7 +96,7 @@
       <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+            <state line="32" column="35" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,13 +118,14 @@
       <list>
         <option value="$PROJECT_DIR$/web/bootstrap.css" />
         <option value="$PROJECT_DIR$/web/about.html" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/http.js" />
+        <option value="$PROJECT_DIR$/web/style.css" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/styletime.js" />
         <option value="$PROJECT_DIR$/web/script.js" />
-        <option value="$PROJECT_DIR$/web/style.css" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/web/content/sofsis.cl/index.html.css" />
       </list>
     </option>
   </component>
@@ -158,6 +179,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styletime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styletime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sofsis.cl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styletime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styletime" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -296,11 +357,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="315" y="27" width="1239" height="764" extended-state="0" />
-    <editor active="true" />
+    <frame x="100" y="48" width="1239" height="764" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29411766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29411766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -380,9 +441,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+        <state line="10" column="17" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="491" selection-end="491" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
@@ -394,37 +469,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/styletime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="241" selection-end="241" vertical-scroll-proportion="-6.875">
+        <state line="104" column="0" selection-start="2698" selection-end="2698" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+        <state line="32" column="35" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styletime.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.0">
+        <state line="14" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/style.css">
+    <entry file="file://$PROJECT_DIR$/web/content/sofsis.cl/index.html.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="24" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.6721311">
+        <state line="4" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.14051522">
           <folding />
         </state>
       </provider>

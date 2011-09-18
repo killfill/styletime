@@ -9,5 +9,6 @@
     , "mkdirp": "*"
     , "watch": "*"
     , "socket.io": "*"
+    , "vogue": "*"
    }
 }
