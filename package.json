@@ -1,0 +1,12 @@
+{ "name": "styletime"
+, "description": "Style Time!!"
+, "version": "0.0.1"
+, "author": "Phillip Neumann <pneumann@gmail.com>"
+, "engines": { "node": "~0.4.x" }
+, "main": "./run.js"
+, "dependencies": {
+      "vogue": "*"
+    , "mkdirp": "*"
+    , "watch": "*"
+   }
+}
