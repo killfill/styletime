@@ -73,7 +73,6 @@ StyleTime.prototype.downloadContent = function(uri) {
         });
 
     })
-
 }
 
 var styletime = new StyleTime();
