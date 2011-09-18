@@ -1,5 +1,6 @@
 var StyleTime = require('./styletime')
   , express = require('express')
+  , socketIO = require('socket.io')
 
 
 var styletime = StyleTime.create();
@@ -16,17 +17,15 @@ styletime.on('download', function(file) {
     console.log('downloaded finished!!', file);
 })
 
-
-styletime.downloadContent('http://sofsis.cl/index.html');
+//styletime.downloadContent('http://sofsis.cl/index.html');
 
 var app = express.createServer();
-
+var io = socketIO.listen(app);
 
 app.configure(function() {
     app.use(express.static(__dirname+'/web'))
     app.use(express.errorHandler({dumpException: true, showStack: true}))
 })
-
 
 app.listen(3000);
 console.log('Ready @3000')

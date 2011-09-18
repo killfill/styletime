@@ -8,5 +8,6 @@
       "vogue": "*"
     , "mkdirp": "*"
     , "watch": "*"
+    , "socket.io": "*"
    }
 }
