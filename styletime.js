@@ -8,12 +8,30 @@ var fs = require('fs')
   , util = require('util')
 
 
+//TODO: Dont use an external process!!...
+var exec = require('child_process').exec;
+function findFiles(dir, cb) {
+    exec("/usr/bin/find " + dir + ' -type file', function(err, stdout, stderr) {
+        if (err) throw err;
+
+        var arr = []
+        stdout.split('\n').forEach(function(item) {
+            var x = item.split(dir+'/')[1];
+            if (x) arr.push(x);
+        })
+        cb && cb(arr);
+
+    })
+}
+
+
 function StyleTime(opts) {
     this.contents = []
     this.init(opts)
     events.EventEmitter.call(this)
 }
 util.inherits(StyleTime, events.EventEmitter);
+
 
 StyleTime.prototype.init = function(opts) {
     this.opts = opts || {};
@@ -22,25 +40,32 @@ StyleTime.prototype.init = function(opts) {
     if (!path.existsSync(this.contentDir))
         fs.mkdirSync(this.contentDir, 0775);
 
-    //Build the list the first time
-    this.contents = fs.readdirSync(this.contentDir);
-
     var me = this;
+
+    //Build the list the first time
+    findFiles(me.contentDir, function(arr) {
+        me.contents = arr;
+        me.emit('newcontent', me.contents);
+    });
+
     //Build watching the content dir.
     //Ok this has bugs
     watch.createMonitor(this.contentDir, function(monitor) {
         monitor.on("created", function(f, fstat) {
-            var name = f.split(me.contentDir+'/')[1];
+            /*var name = f.split(me.contentDir+'/')[1];
             if (me.contents.indexOf(name)>-1) return;
             me.contents.push(name);
-            me.emit('newcontent', me.contents);
+            */
+            findFiles(me.contentDir, function(arr) {
+                me.contents = arr;
+                me.emit('newcontent', me.contents);
+            });
         })
         monitor.on('removed', function(f, fstat) {
-            var name = f.split(me.contentDir+'/')[1];
-            var idx = me.contents.indexOf(name);
-            if (idx<0) return;
-            delete me.contents[idx];
-            me.emit('newcontent', me.contents);
+            findFiles(me.contentDir, function(arr) {
+                me.contents = arr;
+                me.emit('newcontent', me.contents);
+            });
         })
     })
 }

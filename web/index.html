@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>StyleTime!</title>
+      <title>StyleTime!</title>
 
-    <link href="style.css" rel="stylesheet">
-    <script src="script.js"></script>
+      <link href="style.css" rel="stylesheet">
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="script.js"></script>
+
   </head>
 
-  <body>
+  <body onload="init();">
 
     <header>
         <h1>Style Time!</h1>
@@ -17,12 +18,7 @@
             <li><a href="http://github.com/killfill/styletime">GitHub</a></li>
         </ul>
         
-        <select class=selector>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+        <select id=selector class=selector>
         </select>
         
     </header>
