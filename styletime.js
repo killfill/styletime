@@ -8,21 +8,6 @@ var fs = require('fs')
   , util = require('util')
 
 
-//TODO: Dont use an external process!!...
-var exec = require('child_process').exec;
-function findFiles(dir, cb) {
-    exec("/usr/bin/find " + dir + ' -type file', function(err, stdout, stderr) {
-        if (err) throw err;
-
-        var arr = []
-        stdout.split('\n').forEach(function(item) {
-            var x = item.split(dir+'/')[1];
-            if (x) arr.push(x);
-        })
-        cb && cb(arr);
-
-    })
-}
 
 
 function StyleTime(opts) {
@@ -31,7 +16,6 @@ function StyleTime(opts) {
     events.EventEmitter.call(this)
 }
 util.inherits(StyleTime, events.EventEmitter);
-
 
 StyleTime.prototype.init = function(opts) {
     this.opts = opts || {};
@@ -43,10 +27,16 @@ StyleTime.prototype.init = function(opts) {
     var me = this;
 
     //Build the list the first time
-    findFiles(me.contentDir, function(arr) {
+    me.findFiles(me.contentDir, function(arr) {
         me.contents = arr;
         me.emit('newcontent', me.contents);
     });
+    setTimeout(function() {
+        me.findFiles(me.contentDir, function(arr) {
+            me.contents = arr;
+            me.emit('newcontent', me.contents);
+        });
+    }, 1000);
 
     //Build watching the content dir.
     //Ok this has bugs
@@ -56,13 +46,13 @@ StyleTime.prototype.init = function(opts) {
             if (me.contents.indexOf(name)>-1) return;
             me.contents.push(name);
             */
-            findFiles(me.contentDir, function(arr) {
+            me.findFiles(me.contentDir, function(arr) {
                 me.contents = arr;
                 me.emit('newcontent', me.contents);
             });
         })
         monitor.on('removed', function(f, fstat) {
-            findFiles(me.contentDir, function(arr) {
+            me.findFiles(me.contentDir, function(arr) {
                 me.contents = arr;
                 me.emit('newcontent', me.contents);
             });
@@ -113,6 +103,28 @@ StyleTime.prototype.downloadContent = function(uri) {
 
     })
 }
+
+
+//TODO: Change this!...
+exec = require('child_process').exec;
+StyleTime.prototype.findFiles = function(dir, cb) {
+    var me = this;
+
+    exec("/usr/bin/find " + dir + ' -type file', function(err, stdout, stderr) {
+        if (err) throw err;
+
+        var arr = []
+        stdout.split('\n').forEach(function(item) {
+            var x = item.split(dir+'/')[1];
+            if (x) arr.push(x);
+        })
+
+        if (me.contents.join(',') != arr.join(','))
+            cb && cb(arr);
+
+    })
+}
+
 
 exports._class = StyleTime;
 exports.create = function(opts) {
