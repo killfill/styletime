@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="cf06b249-d928-452b-a335-0a97529db857" name="Default" comment="" />
-    <list default="true" id="0ecc9f3f-6058-4295-a574-ebf053e32c93" name="New changelist" comment=":P">
+    <list default="true" id="cf06b249-d928-452b-a335-0a97529db857" name="Default" comment=":P">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styletime.js" afterPath="$PROJECT_DIR$/styletime.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/script.js" afterPath="$PROJECT_DIR$/web/script.js" />
@@ -32,16 +31,16 @@
       <file leaf-file-name="styletime.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styletime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="7" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
+            <state line="114" column="0" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="16" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
+            <state line="70" column="24" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.6721311">
               <folding />
             </state>
           </provider>
@@ -50,7 +49,7 @@
       <file leaf-file-name="http.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/http.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
+            <state line="8" column="2" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -59,7 +58,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="2" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="1.234192">
+            <state line="29" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,9 +102,9 @@
         <option value="$PROJECT_DIR$/http.js" />
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/web/style.css" />
         <option value="$PROJECT_DIR$/styletime.js" />
         <option value="$PROJECT_DIR$/web/script.js" />
+        <option value="$PROJECT_DIR$/web/style.css" />
       </list>
     </option>
   </component>
@@ -271,9 +270,8 @@
     <task active="true" id="Default" summary="Default task">
       <option name="associatedChangelistId" value="0ecc9f3f-6058-4295-a574-ebf053e32c93" />
       <changelist id="cf06b249-d928-452b-a335-0a97529db857" name="Default" comment="" />
-      <changelist id="0ecc9f3f-6058-4295-a574-ebf053e32c93" name="New changelist" comment="" />
       <created>1316045835100</created>
-      <updated>1316319044647</updated>
+      <updated>1316373641067</updated>
     </task>
     <servers />
   </component>
@@ -298,11 +296,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="422" y="49" width="1239" height="764" extended-state="0" />
-    <editor active="false" />
+    <frame x="315" y="27" width="1239" height="764" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29411766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29411766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846716" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -391,28 +389,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/http.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0">
+        <state line="8" column="2" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="16" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/styletime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="7" selection-start="802" selection-end="802" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="293" selection-end="293" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -426,7 +410,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="1.234192">
+        <state line="29" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styletime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="0" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="24" selection-start="1144" selection-end="1144" vertical-scroll-proportion="0.6721311">
           <folding />
         </state>
       </provider>

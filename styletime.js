@@ -8,8 +8,6 @@ var fs = require('fs')
   , util = require('util')
 
 
-
-
 function StyleTime(opts) {
     this.contents = []
     this.init(opts)
@@ -18,21 +16,23 @@ function StyleTime(opts) {
 util.inherits(StyleTime, events.EventEmitter);
 
 StyleTime.prototype.init = function(opts) {
+    var me = this;
+
     this.opts = opts || {};
-    this.contentDir = this.opts.contentDir || path.join(__dirname, 'content');
+    this.contentDirName = 'content';
+    this.contentDir = this.opts.contentDir || path.join(__dirname, 'web', me.contentDirName);
 
     if (!path.existsSync(this.contentDir))
         fs.mkdirSync(this.contentDir, 0775);
 
-    var me = this;
 
     //Build the list the first time
-    me.findFiles(me.contentDir, function(arr) {
+    me.findFiles(function(arr) {
         me.contents = arr;
         me.emit('newcontent', me.contents);
     });
     setTimeout(function() {
-        me.findFiles(me.contentDir, function(arr) {
+        me.findFiles(function(arr) {
             me.contents = arr;
             me.emit('newcontent', me.contents);
         });
@@ -46,13 +46,13 @@ StyleTime.prototype.init = function(opts) {
             if (me.contents.indexOf(name)>-1) return;
             me.contents.push(name);
             */
-            me.findFiles(me.contentDir, function(arr) {
+            me.findFiles(function(arr) {
                 me.contents = arr;
                 me.emit('newcontent', me.contents);
             });
         })
         monitor.on('removed', function(f, fstat) {
-            me.findFiles(me.contentDir, function(arr) {
+            me.findFiles(function(arr) {
                 me.contents = arr;
                 me.emit('newcontent', me.contents);
             });
@@ -107,16 +107,16 @@ StyleTime.prototype.downloadContent = function(uri) {
 
 //TODO: Change this!...
 exec = require('child_process').exec;
-StyleTime.prototype.findFiles = function(dir, cb) {
+StyleTime.prototype.findFiles = function(cb) {
     var me = this;
 
-    exec("/usr/bin/find " + dir + ' -type file', function(err, stdout, stderr) {
+    exec("/usr/bin/find " + me.contentDir + ' -type file', function(err, stdout, stderr) {
         if (err) throw err;
 
         var arr = []
         stdout.split('\n').forEach(function(item) {
-            var x = item.split(dir+'/')[1];
-            if (x) arr.push(x);
+            var x = item.split(me.contentDirName+'/')[1];
+            if (x) arr.push(me.contentDirName+'/'+x);
         })
 
         if (me.contents.join(',') != arr.join(','))

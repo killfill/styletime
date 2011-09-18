@@ -17,8 +17,7 @@ header {
 	-webkit-box-shadow:0px 2px 5px gray;
 	-moz-box-shadow:0px 2px 5px gray;
 	box-shadow:0px 2px 5px gray;
-    text-shadow: 0 1px 0 rgba(220, 110,110, .5);
-
+    text-shadow: #666 0px 2px 3px;
   height: 50px;
   position: fixed;
   top: 0;
@@ -30,6 +29,9 @@ header {
 header h1 {
     float: left;
     margin-right:  50px;
+	text-align: center;
+	text-shadow: #666 0px 2px 3px;
+	font-weight: bold;
 }
 
 header ul {
@@ -74,7 +76,7 @@ a:hover {
 
 #content {
     padding-top: 50px;
-    width: 95%;
+    width: 100%;
     height: 95%;
     border:  0px;
 }
