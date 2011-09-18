@@ -5,19 +5,18 @@
     <title>StyleTime!</title>
 
     <link href="style.css" rel="stylesheet">
-
+    <script src="script.js"></script>
   </head>
 
   <body>
 
-
     <header>
         <h1>Style Time!</h1>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Whats this?</a></li>
-            <li><a href="#">GitHub</a></li>
+            <li><a href="#about" onclick="$('content').src='about.html';">About</a></li>
+            <li><a href="http://github.com/killfill/styletime">GitHub</a></li>
         </ul>
+        
         <select class=selector>
             <option>1</option>
             <option>2</option>
@@ -25,10 +24,10 @@
             <option>4</option>
             <option>5</option>
         </select>
+        
     </header>
 
-    <iframe id='content' src="./about.html" transparency>
-        sip
+    <iframe id='content' src="about.html" transparency>
     </iframe>
         
     </iframe>
